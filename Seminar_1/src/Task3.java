@@ -6,29 +6,32 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        int a = scanner.nextInt();
+        double a = scanner.nextDouble();
         System.out.println("Введите операцию (+, -, *, /): ");
         char op = scanner.next().charAt(0);
         System.out.println("Введите второе число: ");
-        int b = scanner.nextInt();
-        int res = 0;
-
-        switch (op) {
-            case '+':
-                res = a + b;
-                break;
-            case '-':
-                res = a - b;
-                break;
-            case '/':
-                res = a / b;
-                break;
-            case '*':
-                res = a * b;
-                break;
+        double b = scanner.nextDouble();
+        double res = 0;
+        if (b == 0 && op == '/') {
+            System.out.println("Делить на 0 нельзя");
+        } else {
+            switch (op) {
+                case '+':
+                    res = a + b;
+                    break;
+                case '-':
+                    res = a - b;
+                    break;
+                case '/':
+                    res = a / b;
+                    break;
+                case '*':
+                    res = a * b;
+                    break;
+            }
+            System.out.println("Решение: " + a + " " + op + " " + b + " = " + res);
+            scanner.close();
         }
-        System.out.println(a + " " + op + " " + b + " = " + res);
-        scanner.close();
     }
 }
 
