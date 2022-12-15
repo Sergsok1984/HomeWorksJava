@@ -11,16 +11,8 @@ public class Task2 {
             list.add(rnd.nextInt(100));
         }
         System.out.println("Заданный список: " + list);
-        System.out.println("Результирующий список: " + getResultList(list));
-    }
-    public static ArrayList<Integer> getResultList(ArrayList<Integer> list) {
-        ArrayList<Integer> resList = new ArrayList<>();
-        for (int item : list) {
-            if ((item % 2) != 0) {
-                resList.add(item);
-            }
-        }
-        return resList;
+        list.removeIf(i -> i % 2 == 0 );
+        System.out.println("Очищенный список: " + list);
     }
 }
 
