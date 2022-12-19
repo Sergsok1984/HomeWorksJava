@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class MyStack {
-    static LinkedList<Integer> list = new LinkedList<>();
+    public static LinkedList<Integer> list = new LinkedList<>();
     int value = 5;
 
     public LinkedList<Integer> getList() {
@@ -11,15 +11,15 @@ public class MyStack {
         return list;
     }
 
-    public static void enqueue(int value) {
+    public void enqueue(int value) {
         list.addLast(value);
     }
 
-    public static Integer dequeue() {
+    public Integer dequeue() {
         return list.pollFirst();
     }
 
-    public static Integer first() {
+    public Integer first() {
         return list.getFirst();
     }
 }
