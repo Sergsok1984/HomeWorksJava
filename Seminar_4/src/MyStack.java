@@ -11,16 +11,15 @@ public class MyStack {
         return list;
     }
 
-    public LinkedList<Integer> enqueue(int value) {
+    public static void enqueue(int value) {
         list.addLast(value);
-        return list;
     }
 
-    public Integer dequeue(LinkedList<Integer> list) {
+    public static Integer dequeue() {
         return list.pollFirst();
     }
 
-    public Integer first(LinkedList<Integer> list) {
+    public static Integer first() {
         return list.getFirst();
     }
 }
