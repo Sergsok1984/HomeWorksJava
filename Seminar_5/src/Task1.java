@@ -161,14 +161,6 @@ public class Task1 {
 }
 
 
-//        String line = br.readLine();
-//        line = line.replaceAll("[\"}\\s+]", " ").replace("{", "")
-//                .replace("=", ": ");
-//        String[] arrStr = new String[]{line};
-//        for (String el : arrStr) {
-//            System.out.println(el);
-//        }
-//        fr.close();
 
 
 
